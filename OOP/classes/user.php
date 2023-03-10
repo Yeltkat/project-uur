@@ -17,6 +17,19 @@ class User {
         return $this->password;
     }
 
+    function ValidateUser(){
+        $errors=[];
+
+        if (empty($this->username)){
+            array_push(errors, "invalid username");
+        }
+        else if (empty($this->password)){
+            Array_push($errors, "invalid password");
+        }
+
+        return $errors;
+    }
+
     public function authenticate($username, $password) {
         return ($this->username === $username && $this->password === $password);
     }
