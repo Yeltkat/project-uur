@@ -1,13 +1,13 @@
 <?php
 
 class User {
-    private $username;
+    public $username;
     private $password;
 
-    public function __construct($username, $password) {
-        $this->username = $username;
-        $this->password = $password;
-    }
+   public function ShowUser(){
+    echo "<br>Username: $this->username<br>";
+    echo "<br>USername: $this->password<br>";
+   }
 
     public function getUsername() {
         return $this->username;
