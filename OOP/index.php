@@ -6,7 +6,7 @@ if(isset($_POST['login']) && $_POST['login'] == "login"){
 require_once('classes/user.php');
 $user = new User();
 
-$user->username = $_POST[úsername];
+$user->username = $_POST['username'];
 $user->SetPassword($_POST['password']);
 
 $user->ShowUser();
