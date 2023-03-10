@@ -8,5 +8,7 @@
 </head>
 <body>
   <p>home page</P>
+
+<a href="login.php">login</a>
 </body>
 </html>
