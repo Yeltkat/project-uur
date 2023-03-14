@@ -7,11 +7,11 @@
 	<title>home</title>
 </head>
 <body>
-<h1>homepagina</h1>
+<h3>homepagina</h3>
 <hr>
 </br>
 
-<a href="register_form.php">Registration</a></br></br>
+<a href="registration_form.php">Registration</a></br></br>
 <a href="login_form.php">login</a>
 </body>
 </html>

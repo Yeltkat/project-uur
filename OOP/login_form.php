@@ -41,7 +41,7 @@
 	</head>
 <body>
 
-	<h3>PHP - PDO Login and Registration</h3>
+	<h3>PHP - PDO Login </h3>
 	<hr/>
 	
 	<form action="" method="POST">	
