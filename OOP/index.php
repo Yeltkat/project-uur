@@ -7,7 +7,9 @@
 	<title>home</title>
 </head>
 <body>
-<a href="register_form.php">Registration</a>
+<h1>homepagina</h1></br>
+
+<a href="register_form.php">Registration</a></br></br>
 <a href="login_form.php">login</a>
 </body>
 </html>
