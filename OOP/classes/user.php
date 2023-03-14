@@ -1,50 +1,51 @@
 <?php
+    // Functie: classdefinitie User 
+    // Auteur: Wigmans
 
-class User {
-    public $username;
-    private $password;
+    class User{
 
-   public function ShowUser(){
-    echo "<br>Username: $this->username<br>";
-    echo "<br>USername: $this->password<br>";
-   }
-
-    public function getUsername() {
-        return $this->username;
-    }
-
-    public function getPassword() {
-        return $this->password;
-    }
-
-    function ValidateUser(){
-        $errors=[];
-
-        if (empty($this->username)){
-            array_push(errors, "invalid username");
-        }
-        else if (empty($this->password)){
-            Array_push($errors, "invalid password");
+        // Eigenschappen 
+        public $username;
+        public $email;
+        private $password;
+        
+        public function ShowUser() {
+            echo "<br>Username: $this->username<br>";
+            echo "<br>Password: $this->password<br>";
+            echo "<br>Email: $this->email<br>";
         }
 
-        return $errors;
+        public function RegisterUser(){
+            
+        }
+
+        function SetPassword($password){
+            $this->password = $password;
+        }
+        function GetPassword(){
+            return $this->password;
+        }
+
+        function ValidateUser(){
+            $errors=[];
+
+            if (empty($this->username)){
+                array_push($errors, "Invalid username");
+            } else if (empty($this->password)){
+                array_push($errors, "Invalid password");
+            }
+            
+            return $errors;
+        }
+
+        public function LoginUser(){
+            // Connect database
+
+            // zoek user in de table user
+
+            // indeien gevonden dan sessie vullem
+
+            return false;
+        }
     }
-
-    public function authenticate($username, $password) {
-        return ($this->username === $username && $this->password === $password);
-    }
-}
-
-$user = new User('myusername', 'mypassword');
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    if ($user->authenticate($username, $password)) {
-        echo "Login successful!";
-    } else {
-        echo "Invalid username or password";
-    }
-}
 ?>
