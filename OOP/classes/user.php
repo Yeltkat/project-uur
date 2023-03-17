@@ -1,6 +1,5 @@
 <?php
     // Functie: classdefinitie User 
-    // Auteur: Wigmans
 
     class User{
 

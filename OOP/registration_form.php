@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +12,12 @@
 </head>
 <body>
     <h3>Registration</h3>
-    <hr>
-    <br>
-    <h3>register here...</h3>
-    <hr>
+    
+    <form action="" method="POST">	
+        <h3>register here...</h3>
+        <hr>
+
+        <label>username</label>
+        <input type="text" name="username" />
 </body>
 </html>
