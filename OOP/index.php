@@ -11,7 +11,8 @@
 <hr>
 </br>
 
-<a href="registration_form.php">Registration</a></br></br>
+<a href="registration_form.php">Registration</a>
+</br></br>
 <a href="login_form.php">login</a>
 </body>
 </html>

@@ -56,7 +56,7 @@
 		<br>
 		<button type="submit" name="login-btn">Login</button>
 		<br>
-		<a href="register_form.php">Registration</a>
+		<a href="registration_form.php">Registration</a>
 	</form>
 		
 </body>
