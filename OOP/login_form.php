@@ -16,9 +16,19 @@
 		// Validatie gegevens
 		$errors = $user->ValidateUser();
 
-		$status = $user->LoginUser();
 
         echo "login status" . $status;
+
+		//indien geen fouten dan inloggen
+		if(count($errors)== 0){
+			//inloggen
+			if ($user->LoginUser()){
+				echo "Login oke";
+			}else
+			{
+				echo "Login not oke";
+			}
+		}
 
 		
 		if(count($errors) > 0){
