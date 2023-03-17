@@ -12,7 +12,8 @@
 </head>
 <body>
     <h3>Registration</h3>
-    
+    <hr>
+
     <form action="" method="POST">	
         <h3>register here...</h3>
         <hr>

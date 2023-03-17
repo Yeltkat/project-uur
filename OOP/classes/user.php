@@ -21,6 +21,7 @@
         function SetPassword($password){
             $this->password = $password;
         }
+        
         function GetPassword(){
             return $this->password;
         }
@@ -39,9 +40,19 @@
 
         public function LoginUser(){
             // Connect database
+            $serverName = "localhost";
+            $dBUsername = "root";
+            $dBPassword = "";
+            $dBName = "project-uur";
 
+            $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
+
+            if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+            }
+            
             // zoek user in de table user
-
+            
             // indeien gevonden dan sessie vullem
 
             return false;
