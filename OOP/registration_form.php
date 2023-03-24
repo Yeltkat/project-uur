@@ -20,5 +20,14 @@
 
         <label>username</label>
         <input type="text" name="username" />
+        <br>
+        <label>set password</label>
+        <input type="text" name="password" />
+        <br>
+        <label>confirm password</label>
+        <input type="text" name="password" />
+        <br>
+        <a href="login_form.php">login</a>
+    </form>
 </body>
 </html>
