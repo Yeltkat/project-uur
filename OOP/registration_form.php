@@ -27,6 +27,8 @@
         <label>confirm password</label>
         <input type="text" name="password" />
         <br>
+        <button type="submit" name="register-btn">registreer</button>
+        <br>
         <a href="login_form.php">login</a>
     </form>
 </body>
